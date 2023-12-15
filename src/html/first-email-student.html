@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta charset='utf-8'>
+  </head>
+  <body>
+      <div style="padding:30px;text-align:center;background:#0e2b4e;color:white;font-size:30px">
+        <h1>Welcome to SUNIA!</h1>
+      </div>
+      <p>Hello <?= studentName ?>,</p>
+      <p>Thank you for registering for SUNIA 2023!️ We're so excited to meet you this summer. My name is Patrick Harvey, our Registrar.</p>
+      <p>Now that you have filled out our registration form, there are just a few more steps in your registration:</p>
+      <ul>
+        <li>Complete our <a href="https://www.sunia.ca/registrant-info" target="_blank">student information form</a>. Once you do so, we'll send you and your parent/guardian a copy of your responses.</li>
+        <li>Select a <a href="https://www.sunia.ca/payment-select" target="_blank">payment option</a>, or submit a request for a deferral or financial aid (if you have not already done so).</li>
+        <li>Complete your waivers at <a href="sunia.ca/waivers" target="_blank">sunia.ca/waivers</a>.</li>
+        <li>(Optionally) Find a friend to bring with you, and once they've signed up, fill in our <a href="sunia.ca/buddy-discount" target="_blank">buddy discount form to save $100 each!</a></li>
+        <li>Confirm that the registration information you have provided so far is correct and complete. (If something's wrong, feel free to reply to this email and I can correct it!)</li>
+      </ul>
+      <p>Here's the information we received.</p>
+      <p><br><em>Student Information</em><br>
+        First name: <?= registrant.firstName ?><br> 
+        Preferred name: <?= registrant.prefName ?><br>
+        Last name: <?= registrant.lastName ?><br>
+        Week: <?= registrant.week ?><br>
+        Phone: <?= registrant.studentPhone ?><br>
+        Email: <?= registrant.studentEmail ?><br>
+        Age: <?= registrant.age ?><br>
+        Address: <?= registrant.address ?><br>
+        City: <?= registrant.city ?><br>
+        Province: <?= registrant.province ?><br>
+        Country: <?= registrant.country ?><br>
+        Postal Code: <?= registrant.postalCode ?><br>
+
+      <header>
+      <h3>Location Update</h3>
+      <p>SUNIA has unfortunately been forced to relocate from the Goldeye Centre for our 2023 program. For more information on our new location, Camp Whitney, please check out our <a href="https://www.sunia.ca/location">website</a>. Our team is working hard to adapt SUNIA to its new location, and we can assure you that this change will not jeopardize your experience in any way. Please keep an eye out for more updates from us as we finalize more details!</p>
+      <h3>Refund Policy</h3>   
+      <p>In the case that you cannot attend SUNIA for any reason, and you wish to cancel your registration, you <strong>must do so in the next three days.</strong> After these three days, and prior to July 1st 2023, we will charge a <strong>$100 cancellation fee.</strong> If you have already paid, this means we will refund you all but $100 of your payment. Cancellations received on or after July 1st <strong>will not receive a refund.</strong> In the case of extenuating circumstances (such as COVID-19 infection or outbreak), please contact me and we can discuss the possibility of a full refund, or other options.</p>
+      </header>
+      <p>Last thing: please do not hesitate to reach out to me at registrar@sunia.ca with any questions or concerns you may have. Our staff looks forward to welcoming you to SUNIA this August!</p>
+      <br><p>Speak soon,
+      <p><strong>Patrick Harvey</strong><br>Registrar<br>registrar@sunia.ca<br>(780) 695-6697<br><a href="https://sunia.ca">sunia.ca</a></p>
+      <img src="https://images.squarespace-cdn.com/content/571bc2cc40261d6b2e685496/1526336873602-2HJT129AA26UKZ4VGERE/logo%281%29.jpg?format=1000w&content-type=image%2Fpng" width="250" height="57" alt="SUNIA Logo"/>
+  </body>
+</html>
+      
+
+
