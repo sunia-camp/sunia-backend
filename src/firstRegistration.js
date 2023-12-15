@@ -1,7 +1,5 @@
 // Compiled using sunia-backend 1.0.0 (TypeScript 4.5.4)
 
-// Tbh idk what these global variables are I think they're related to the way this used to work (a local
-// version on someone's laptop that got pushed to Apps Script) - feel free to experiment w removing them
 var exports = exports || {};
 var module = module || { exports: exports };
 
