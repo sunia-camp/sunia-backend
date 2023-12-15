@@ -17,6 +17,9 @@ function managePayments() {
     // TODO: find way of integrating Stripe data with sheets
     Logger.log("Done!");
 }
+
+// Add test comment
+
 function transferPaypal() {
     var openRow = getOpenRow();
     var inputTab = getInputPayment();
