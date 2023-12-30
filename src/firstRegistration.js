@@ -103,7 +103,7 @@ function transferFirstData(studentsToTransfer) {
     // -- Also get the existing data in the input sheet so we can get column indices
     var data = mrInput.getDataRange().getValues(); // raw reg data in 2D array
     // -- Get all the column indices by finding the column names
-    // -- UPDATE 2: if you update the form, you have to update these too
+    // -- UPDATE 2: if you update the MRDB, you have to update these too
     var dateCol = data[0].indexOf("date_reg"); // looks at top row of sheet
     var fnCol = data[0].indexOf("first_name");
     var prefCol = data[0].indexOf("pref_name");
@@ -358,7 +358,7 @@ function notifyError(error) {
     var url = PropertiesService.getScriptProperties().getProperty("slackTestingWebhook");
     // Generate the message text, including a ping
     // -- UPDATE 3: update the @ here to the member ID for the new CTO/Reg (or both), it's in Profile -> [three dots] -> Copy member ID    
-    var errorMessage = '<@US20FNHGB> ERROR: ' + error;
+    var errorMessage = '<@U04HY8NFDRP> ERROR: ' + error;
     var testPayload = {
         channel: "#reg-errors",
         text: errorMessage

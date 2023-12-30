@@ -190,7 +190,7 @@ function transferSecondData(studentsToTransfer) {
             var payload = {
                 channel: "reg-errors",
                 // -- UPDATE 3: update the @ here to the member ID for the new CTO/Reg (or both), it's in Profile -> [three dots] -> Copy member ID
-                text: "<@US20FNHGB> REG INFO ERROR\nName: ".concat(studentToTransfer.firstName, " (").concat(studentToTransfer.prefName, ") ").concat(studentToTransfer.lastName)
+                text: "<@U04HY8NFDRP> REG INFO ERROR\nName: ".concat(studentToTransfer.firstName, " (").concat(studentToTransfer.prefName, ") ").concat(studentToTransfer.lastName)
             };
             sendToSlack(url, payload);
             continue;
@@ -336,7 +336,7 @@ function sendStudentSecondEmail(sEmail, registrant) {
 function notifyError(error) {
     var url = PropertiesService.getScriptProperties().getProperty("slackTestingWebhook");
     // -- UPDATE 3: update the @ here to the member ID for the new CTO/Reg (or both), it's in Profile -> [three dots] -> Copy member ID
-    var errorMessage = '<@US20FNHGB> ERROR: ' + error;
+    var errorMessage = '<@U04HY8NFDRP> ERROR: ' + error;
     var testPayload = {
         channel: "#reg-errors",
         text: errorMessage

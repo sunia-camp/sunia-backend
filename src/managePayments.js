@@ -18,8 +18,6 @@ function managePayments() {
     Logger.log("Done!");
 }
 
-// Add test comment
-
 function transferPaypal() {
     var openRow = getOpenRow();
     var inputTab = getInputPayment();
@@ -57,7 +55,7 @@ function transferPaypal() {
             var url = PropertiesService.getScriptProperties().getProperty("slackTestingWebhook");
             var payload = {
                 channel: "reg-errors",
-                text: "<@US20FNHGB> PAYMENT ERROR\nName: ".concat(studentName)
+                text: "<@U04HY8NFDRP> PAYMENT ERROR\nName: ".concat(studentName)
             };
             sendToSlack(url, payload);
         }
@@ -102,7 +100,7 @@ function transferCheques() {
             var payload = {
                 channel: "reg-errors",
                 // -- UPDATE 3: update the @ here to the member ID for the new CTO/Reg (or both), it's in Profile -> [three dots] -> Copy member ID
-                text: "<@US20FNHGB> PAYMENT ERROR\nName: ".concat(studentName)
+                text: "<@U04HY8NFDRP> PAYMENT ERROR\nName: ".concat(studentName)
             };
             sendToSlack(url, payload);
         }
@@ -146,7 +144,7 @@ function transferStripe() {
             var payload = {
                 channel: "reg-errors",
                 // -- UPDATE 3: update the @ here to the member ID for the new CTO/Reg (or both), it's in Profile -> [three dots] -> Copy member ID
-                text: "<@US20FNHGB> PAYMENT ERROR\nName: ".concat(studentName)
+                text: "<@U04HY8NFDRP> PAYMENT ERROR\nName: ".concat(studentName)
             };
             sendToSlack(url, payload);
         }
@@ -191,7 +189,7 @@ function transferEtransfer() {
             var payload = {
                 channel: "reg-errors",
                 // -- UPDATE 3: update the @ here to the member ID for the new CTO/Reg (or both), it's in Profile -> [three dots] -> Copy member ID
-                text: "<@US20FNHGB> PAYMENT ERROR\nName: ".concat(studentName)
+                text: "<@U04HY8NFDRP> PAYMENT ERROR\nName: ".concat(studentName)
             };
             sendToSlack(url, payload);
         }
@@ -236,7 +234,7 @@ function transferDeferrals() {
             var payload = {
                 channel: "reg-errors",
                 // -- UPDATE 3: update the @ here to the member ID for the new CTO/Reg (or both), it's in Profile -> [three dots] -> Copy member ID
-                text: "<@US20FNHGB> PAYMENT ERROR\nName: ".concat(studentName)
+                text: "<@U04HY8NFDRP> PAYMENT ERROR\nName: ".concat(studentName)
             };
             sendToSlack(url, payload);
         }
@@ -281,7 +279,7 @@ function transferAid() {
             var payload = {
                 channel: "reg-errors",
                 // -- UPDATE 3: update the @ here to the member ID for the new CTO/Reg (or both), it's in Profile -> [three dots] -> Copy member ID
-                text: "<@US20FNHGB> PAYMENT ERROR\nName: ".concat(studentName)
+                text: "<@U04HY8NFDRP> PAYMENT ERROR\nName: ".concat(studentName)
             };
             sendToSlack(url, payload);
         }
